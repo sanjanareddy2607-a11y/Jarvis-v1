@@ -160,26 +160,32 @@ JARVIS uses n8n to create intelligent automation chains.
 ---
 
 ## 🏗️ **System Architecture**
+
 ┌────────────────────────────────────────────────────┐
-│                   YOU (User)                        │
-└────────────────────┬─────────────────────────────────┘
-│
+│                   YOU (User)                       │
+└────────────────────┬───────────────────────────────┘
+
+                     │
 ┌────────────▼─────────────────┐
-│   OPEN WEBUI (localhost:3000) │
-│   Beautiful Chat Interface    │
-└────────────────┬──────────────┘
-│
+│   OPEN WEBUI (localhost:3000)│
+│   Beautiful Chat Interface   │
+└────────────────┬─────────────┘
+
+                 │
+
 ┌────────────────▼──────────────┐
 │  OLLAMA (localhost:11434)     │
 │  AI Brain (3x 7B Models)      │
 │  GPU-Optimized Inference      │
 └────────────────┬──────────────┘
-│
+
+                 │
 ┌────────────────▼──────────────┐
 │  N8N (localhost:5678)         │
 │  Workflow Automation          │
 └──────┬──────────────┬─────────┘
-│              │
+
+       │              │
 ┌──────▼──┐    ┌──────▼──────┐
 │ FLASK   │    │ PYTHON TOOLS│
 │ REST API│    │ (5 tools)   │
@@ -338,31 +344,38 @@ Building and using JARVIS teaches you:
 ---
 
 ## 🔄 **Project Phases Completed**
+
 ✅ Phase 1: Infrastructure Setup
 • Ollama installation & configuration
 • Docker environment setup
 • Open WebUI deployment
 • n8n workflow engine
+
 ✅ Phase 2: Project Structure
 • Folder organization
 • Git repository setup
 • Configuration management
+
 ✅ Phase 3: Ollama Mastery
 • 3 LLM models configured
 • GPU optimization
 • Model comparison & benchmarking
+
 ✅ Phase 4: Automation Workflows
 • n8n fundamentals
 • Webhook integration
 • Workflow creation
+
 ✅ Phase 5: Python Tools Development
 • 5 custom tools created
 • File processing
 • Data analysis capabilities
+
 ✅ Phase 6: API Integration
 • Flask REST server
 • 6+ API endpoints
 • JSON request/response handling
+
 ✅ Phase 7: Documentation & Polish
 • Comprehensive README
 • Architecture documentation
@@ -379,13 +392,13 @@ Building and using JARVIS teaches you:
 - Proves DevOps knowledge
 - Shows project completion ability
 
-### **For Your Career**
+### **For Career**
 - Portfolio-worthy project
 - Solves real problems
 - Shows initiative & learning
 - Completely original work
 
-### **For Your Future**
+### **For Future**
 - Foundation for advanced ML projects
 - Local deployment alternative to cloud
 - Educational tool for learning AI
@@ -473,9 +486,9 @@ See `LICENSE` file for details.
 - 🌍 Open to opportunities in AI/ML
 
 **Connect:**
-- 🐙 GitHub: [github.com/yourusername/jarvis](https://github.com/yourusername)
-- 💼 LinkedIn: [Your LinkedIn](https://linkedin.com)
-- 📧 Email: sanjana@example.com
+- 🐙 GitHub: [github.com/sanjanareddy2607-a11y/jarvis](https://github.com/sanjanareddy2607-a11y)
+- 💼 LinkedIn: [www.linkedin.com/in/mummaka-sanjana-reddy-794089405](https://linkedin.com)
+- 📧 Email: sanjanareddy2607@gmail.com
 
 ---
 
