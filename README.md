@@ -4,11 +4,11 @@
 
 ### *A Fully Local, Private, Open-Source AI Assistant*
 
-![Python](https://img.shields.io/badge/Python-3.11+-3776ab?style=for-the-badge&logo=python&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-34A853?style=for-the-badge&logo=openai&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.11%2B-3776ab?style=for-the-badge&logo=python&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-green?style=for-the-badge&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ed?style=for-the-badge&logo=docker&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-REST%20API-000000?style=for-the-badge&logo=flask&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-Automation-FF6B6B?style=for-the-badge&logo=n8n&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-Automation-FF6B6B?style=for-the-badge&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 **[🚀 Quick Start](#-quick-start) • [📖 Docs](#-documentation) • [🎯 Features](#-features) • [🔧 Tech Stack](#-tech-stack-with-logos)**
@@ -159,91 +159,63 @@ JARVIS uses n8n to create intelligent automation chains.
 ---
 
 ## 🏗️ **System Architecture**
-┌─────────────────────────────────────────────────┐
-│         YOU (User Interface)                    │
-└────────────────────┬────────────────────────────┘
-│
-┌───────────▼───────────┐
-│  OPEN WEBUI           │
-│  (localhost:3000)      │
-│  ChatGPT-like UI       │
-└───────────┬───────────┘
-│
-┌───────────▼───────────┐
-│  OLLAMA               │
-│  (localhost:11434)     │
-│  AI Brain (3x 7B)     │
-│  GPU-Optimized        │
-└───────────┬───────────┘
-│
-┌───────────▼───────────┐
-│  N8N                  │
-│  (localhost:5678)      │
-│  Workflow Engine       │
-└──────┬────────┬───────┘
-│        │
-┌──────▼──┐  ┌──▼──────┐
-│ FLASK   │  │ PYTHON  │
-│ REST API│  │ TOOLS   │
-└─────────┘  └─────────┘
+## System Architecture
 
-## 🔧 Tech Stack (With Logos)
+```
+                    ┌─────────────┐
+                    │   YOU       │
+                    │  (User)     │
+                    └──────┬──────┘
+                           │
+                    ┌──────▼──────┐
+                    │ OPEN WEBUI  │
+                    │ :3000       │
+                    │ Chat UI     │
+                    └──────┬──────┘
+                           │
+                    ┌──────▼──────┐
+                    │   OLLAMA    │
+                    │ :11434      │
+                    │ AI Brain    │
+                    │ (3x 7B)     │
+                    └──────┬──────┘
+                           │
+                    ┌──────▼──────┐
+                    │    N8N      │
+                    │ :5678       │
+                    │ Workflows   │
+                    └───┬─────┬───┘
+                        │     │
+         ┌──────────────┘     └──────────────┐
+         │                                   │
+    ┌────▼────┐                      ┌──────▼──────┐
+    │  FLASK  │                      │   PYTHON    │
+    │ :5000   │                      │   TOOLS     │
+    │ REST    │                      │  (5 tools)  │
+    │ API     │                      └─────────────┘
+    └─────────┘
+```
 
-### **AI & Inference**
 
-<div align="center">
+## Tech Stack (With Logos)
 
-![Ollama](https://img.shields.io/badge/-Ollama-34A853?style=flat&logo=openai&logoColor=white)
-Local LLM Runtime
+### AI & Inference
+- **Ollama** - Local LLM Runtime
+- **NVIDIA CUDA** - GPU Acceleration  
+- **PyMuPDF** - PDF Text Extraction
 
-![NVIDIA CUDA](https://img.shields.io/badge/-NVIDIA%20CUDA-76B900?style=flat&logo=nvidia&logoColor=white)
-GPU Acceleration
+### Interface & Automation
+- **Open WebUI** - ChatGPT-like Chat Interface
+- **n8n** - Visual Workflow Automation
 
-![PyMuPDF](https://img.shields.io/badge/-PyMuPDF-FF6B6B?style=flat&logoColor=white)
-PDF Processing
+### Backend & APIs
+- **Python 3.11+** - Programming Language
+- **Flask** - REST API Web Framework
+- **Docker** - Containerization Platform
 
-</div>
-
-### **Interface & Automation**
-
-<div align="center">
-
-![Open WebUI](https://img.shields.io/badge/-Open%20WebUI-4A90E2?style=flat&logoColor=white)
-Chat Interface
-
-![n8n](https://img.shields.io/badge/-n8n-FF6B6B?style=flat&logo=n8n&logoColor=white)
-Workflow Builder
-
-</div>
-
-### **Backend & APIs**
-
-<div align="center">
-
-![Python](https://img.shields.io/badge/-Python%203.11-3776ab?style=flat&logo=python&logoColor=white)
-Programming Language
-
-![Flask](https://img.shields.io/badge/-Flask-000000?style=flat&logo=flask&logoColor=white)
-Web Framework
-
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)
-Containerization
-
-</div>
-
-### **Data Processing**
-
-<div align="center">
-
-![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat&logo=pandas&logoColor=white)
-Data Analysis
-
-![Python OS](https://img.shields.io/badge/-OS%20Module-3776ab?style=flat&logo=python&logoColor=white)
-File System
-
-</div>
-
----
+### Data Processing
+- **Pandas** - CSV & Data Analysis
+- **Python OS** - File System Operations
 
 ## 📊 **Performance Metrics**
 
