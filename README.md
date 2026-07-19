@@ -1,18 +1,17 @@
 <div align="center">
 
-# 🤖 **JARVIS** — Personal AI Operating System
+# 🤖 JARVIS — Personal AI Operating System
 
 ### *A Fully Local, Private, Open-Source AI Assistant*
 
-**Built with Passion | Powered by Ollama | Automated by n8n | Crafted with Python**
+![Python](https://img.shields.io/badge/Python-3.11+-3776ab?style=for-the-badge&logo=python&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-34A853?style=for-the-badge&logo=openai&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-REST%20API-000000?style=for-the-badge&logo=flask&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-Automation-FF6B6B?style=for-the-badge&logo=n8n&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-[![Python](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)](https://python.org)
-[![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-green?style=for-the-badge&logo=openai)](https://ollama.ai)
-[![Docker](https://img.shields.io/badge/Docker-Containerized-blue?style=for-the-badge&logo=docker)](https://docker.com)
-[![Flask](https://img.shields.io/badge/Flask-REST%20API-red?style=for-the-badge&logo=flask)](https://flask.palletsprojects.com)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-
-**[🚀 Quick Start](#-quick-start-30-seconds) • [📖 Full Docs](#-documentation) • [💡 Features](#-features) • [🎯 Use Cases](#-real-world-use-cases) • [🔧 Tech Stack](#-tech-stack)**
+**[🚀 Quick Start](#-quick-start) • [📖 Docs](#-documentation) • [🎯 Features](#-features) • [🔧 Tech Stack](#-tech-stack-with-logos)**
 
 </div>
 
