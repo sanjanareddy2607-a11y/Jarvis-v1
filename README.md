@@ -10,6 +10,7 @@
 ![Flask](https://img.shields.io/badge/Flask-REST_API-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![n8n](https://img.shields.io/badge/n8n-Automation-FF6B6B?style=for-the-badge&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
 **[🚀 Quick Start](#-quick-start) • [📖 Docs](#-documentation) • [🎯 Features](#-features) • [🔧 Tech Stack](#-tech-stack-with-logos)**
 
 </div>
