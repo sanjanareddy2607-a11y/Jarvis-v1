@@ -187,27 +187,61 @@ JARVIS uses n8n to create intelligent automation chains.
 │ REST API│  │ TOOLS   │
 └─────────┘  └─────────┘
 
-## 🔧 **Tech Stack**
+## 🔧 Tech Stack (With Logos)
 
-```javascript
-{
-  "ai_engine": "Ollama (Local LLM Inference)",
-  "models": ["Mistral 7B", "Llama2 7B", "Neural Chat 7B"],
-  "interface": "Open WebUI (ChatGPT-like UX)",
-  "automation": "n8n (No-code Workflows)",
-  "api_server": "Flask (Python)",
-  "tools": [
-    "PDF Extraction (PyMuPDF)",
-    "CSV Analysis (Pandas)",
-    "File Processing (Python)",
-    "Directory Analysis (OS Module)"
-  ],
-  "deployment": "Docker (Containerized)",
-  "gpu_support": "NVIDIA CUDA",
-  "version_control": "Git",
-  "language": "Python 3.11+"
-}
-```
+### **AI & Inference**
+
+<div align="center">
+
+![Ollama](https://img.shields.io/badge/-Ollama-34A853?style=flat&logo=openai&logoColor=white)
+Local LLM Runtime
+
+![NVIDIA CUDA](https://img.shields.io/badge/-NVIDIA%20CUDA-76B900?style=flat&logo=nvidia&logoColor=white)
+GPU Acceleration
+
+![PyMuPDF](https://img.shields.io/badge/-PyMuPDF-FF6B6B?style=flat&logoColor=white)
+PDF Processing
+
+</div>
+
+### **Interface & Automation**
+
+<div align="center">
+
+![Open WebUI](https://img.shields.io/badge/-Open%20WebUI-4A90E2?style=flat&logoColor=white)
+Chat Interface
+
+![n8n](https://img.shields.io/badge/-n8n-FF6B6B?style=flat&logo=n8n&logoColor=white)
+Workflow Builder
+
+</div>
+
+### **Backend & APIs**
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/-Python%203.11-3776ab?style=flat&logo=python&logoColor=white)
+Programming Language
+
+![Flask](https://img.shields.io/badge/-Flask-000000?style=flat&logo=flask&logoColor=white)
+Web Framework
+
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat&logo=docker&logoColor=white)
+Containerization
+
+</div>
+
+### **Data Processing**
+
+<div align="center">
+
+![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat&logo=pandas&logoColor=white)
+Data Analysis
+
+![Python OS](https://img.shields.io/badge/-OS%20Module-3776ab?style=flat&logo=python&logoColor=white)
+File System
+
+</div>
 
 ---
 
