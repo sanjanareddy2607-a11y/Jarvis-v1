@@ -1,6 +1,4 @@
-<div align="center">
-
-# 🤖 **JARVIS** — Personal AI Operating System
+# 🤖 JARVIS — Personal AI Operating System
 
 ### *A Fully Local, Private, Open-Source AI Assistant*
 
@@ -12,13 +10,9 @@
 [![Flask](https://img.shields.io/badge/Flask-REST%20API-red?style=for-the-badge&logo=flask)](https://flask.palletsprojects.com)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-**[🚀 Quick Start](#-quick-start-30-seconds) • [📖 Full Docs](#-documentation) • [💡 Features](#-features) • [🎯 Use Cases](#-real-world-use-cases) • [🔧 Tech Stack](#-tech-stack)**
-
-</div>
-
 ---
 
-## ✨ **What is JARVIS?**
+## ✨ What is JARVIS?
 
 > **The AI Assistant You Control. The AI Assistant That Respects Your Privacy.**
 
@@ -35,7 +29,7 @@ Imagine having:
 
 ---
 
-## 🎯 **Why JARVIS Matters**
+## 🎯 Why JARVIS Matters
 
 | Feature | ChatGPT | JARVIS |
 |---------|---------|--------|
@@ -52,7 +46,7 @@ Imagine having:
 
 ---
 
-## 🚀 **Quick Start (30 Seconds!)**
+## 🚀 Quick Start (30 Seconds!)
 
 ### **Fastest Way to Chat with JARVIS**
 
@@ -71,27 +65,20 @@ venv\Scripts\activate
 
 **That's it. You now have a private AI assistant running locally on your machine.**
 
-### **Your First 5 Questions to Try**
-1️⃣  "Explain artificial intelligence to a 5-year-old"
-2️⃣  "Write Python code that checks if a number is prime"
-3️⃣  "What are the top trends in AI in 2026?"
-4️⃣  "Help me debug this error: [paste your error]"
-5️⃣  "Create a business plan for my startup idea"
-
-Try them. Watch it think. Watch it respond. **Experience the magic.** ✨
-
 ---
 
-## 💫 **Features That Make JARVIS Powerful**
+## 💫 Features That Make JARVIS Powerful
 
 ### 🧠 **Three AI Brains (3x 7B Models)**
-🎯 Mistral 7B     → Fast & Accurate (Default choice)
-📚 Llama2 7B      → Best for Deep Reasoning
-💻 Neural Chat 7B → Expert at Coding Help
+
+- **Mistral 7B** → Fast & Accurate (Default choice)
+- **Llama2 7B** → Best for Deep Reasoning
+- **Neural Chat 7B** → Expert at Coding Help
 
 Switch between them anytime. Choose based on your need.
 
 ### 💬 **ChatGPT-Quality Interface**
+
 - Beautiful, responsive design
 - Conversation history
 - Dark/light mode
@@ -99,13 +86,15 @@ Switch between them anytime. Choose based on your need.
 - One-click model switching
 
 ### 🔧 **Smart Python Tools**
-📄 PDF Reader        → Extract text from research papers
-📊 CSV Analyzer      → Analyze data instantly
-📁 File Lister       → Explore project structures
-🎯 Resume Analyzer   → Career-focused intelligence
-🔍 Job Matcher       → Match jobs to your skills
+
+- **PDF Reader** → Extract text from research papers
+- **CSV Analyzer** → Analyze data instantly
+- **File Lister** → Explore project structures
+- **Resume Analyzer** → Career-focused intelligence
+- **Job Matcher** → Match jobs to your skills
 
 ### 🤖 **Workflow Automation** (n8n)
+
 - Visual automation builder
 - No coding required
 - Connect anything to anything
@@ -121,6 +110,7 @@ Switch between them anytime. Choose based on your need.
 /api/match_job_resume    → Match jobs to resume
 
 ### 🛡️ **Maximum Privacy & Control**
+
 - ✅ No internet required
 - ✅ No data collection
 - ✅ No tracking
@@ -129,120 +119,67 @@ Switch between them anytime. Choose based on your need.
 
 ---
 
-## 🎯 **Real-World Use Cases**
-
-### **Student Developer** 📚
-"I have a bug in my code. Can you help?"
-JARVIS analyzes the error and provides solutions—instantly, privately.
-
-### **Content Creator** ✍️
-"Write me a LinkedIn post about AI trends"
-JARVIS generates multiple versions optimized for engagement.
-
-### **Researcher** 🔬
-"Summarize this 50-page research paper"
-JARVIS extracts key findings and creates an abstract.
-
-### **Job Seeker** 💼
-"This job posting interests me. Does it match my skills?"
-JARVIS compares your resume to the job description and highlights gaps.
-
-
-### **Data Analyst** 📊
-"Analyze this CSV file and tell me interesting patterns"
-JARVIS processes the data and provides insights.
-
-
-### **Productivity Hacker** ⚡
-"Automate my daily workflow"
-JARVIS uses n8n to create intelligent automation chains.
+## 🏗️ System Architecture
+YOU (User)
+↓
+OPEN WEBUI (Chat Interface - localhost:3000)
+↓
+OLLAMA (AI Brain - localhost:11434)
+├─→ Mistral 7B
+├─→ Llama2 7B
+└─→ Neural Chat 7B
+↓
+N8N (Workflows - localhost:5678)
+├─→ FLASK API (Python Tools - localhost:5000)
+└─→ File Processing & Data Analysis
+↓
+RESPONSES (Back to You)
 
 ---
 
-## 🏗️ **System Architecture**
+## 🔧 Tech Stack
 
-┌────────────────────────────────────────────────────┐
-│                   YOU (User)                       │
-└────────────────────┬───────────────────────────────┘
-
-                     │
-┌────────────▼─────────────────┐
-│   OPEN WEBUI (localhost:3000)│
-│   Beautiful Chat Interface   │
-└────────────────┬─────────────┘
-
-                 │
-
-┌────────────────▼──────────────┐
-│  OLLAMA (localhost:11434)     │
-│  AI Brain (3x 7B Models)      │
-│  GPU-Optimized Inference      │
-└────────────────┬──────────────┘
-
-                 │
-┌────────────────▼──────────────┐
-│  N8N (localhost:5678)         │
-│  Workflow Automation          │
-└──────┬──────────────┬─────────┘
-
-       │              │
-┌──────▼──┐    ┌──────▼──────┐
-│ FLASK   │    │ PYTHON TOOLS│
-│ REST API│    │ (5 tools)   │
-└─────────┘    └─────────────┘
+- **AI/LLM:** Ollama (Local LLM Inference)
+- **Models:** Mistral 7B, Llama2 7B, Neural Chat 7B
+- **Interface:** Open WebUI (ChatGPT-like UX)
+- **Automation:** n8n (No-code Workflows)
+- **API:** Flask (Python REST Server)
+- **Tools:** PDF Extraction, CSV Analysis, File Processing
+- **Deployment:** Docker (Containerized)
+- **GPU:** NVIDIA CUDA optimized
+- **Language:** Python 3.11+
+- **Version Control:** Git
 
 ---
 
-## 🔧 **Tech Stack**
+## 📊 Performance Metrics
 
-```javascript
-{
-  "ai_engine": "Ollama (Local LLM Inference)",
-  "models": ["Mistral 7B", "Llama2 7B", "Neural Chat 7B"],
-  "interface": "Open WebUI (ChatGPT-like UX)",
-  "automation": "n8n (No-code Workflows)",
-  "api_server": "Flask (Python)",
-  "tools": [
-    "PDF Extraction (PyMuPDF)",
-    "CSV Analysis (Pandas)",
-    "File Processing (Python)",
-    "Directory Analysis (OS Module)"
-  ],
-  "deployment": "Docker (Containerized)",
-  "gpu_support": "NVIDIA CUDA",
-  "version_control": "Git",
-  "language": "Python 3.11+"
-}
-```
+| Metric | Value |
+|--------|-------|
+| **Model Load Time** | 3-5 seconds |
+| **First Response** | 5-10 seconds |
+| **Follow-up Response** | 2-5 seconds |
+| **PDF Processing** | <3 seconds |
+| **CSV Analysis** | <1 second |
+| **GPU Usage** | 4-6GB VRAM |
+| **RAM Usage** | 6-7GB total |
+
+**Tested on:** GTX 1650 + Ryzen 5000 + 8GB RAM
 
 ---
 
-## 📊 **Performance Metrics**
-
-| Metric | Value | Speed |
-|--------|-------|-------|
-| **Model Load Time** | 3-5 seconds | ⚡⚡⚡ |
-| **First Response** | 5-10 seconds | ⚡⚡ |
-| **Follow-up Response** | 2-5 seconds | ⚡⚡⚡⚡ |
-| **PDF Processing** | <3 seconds | ⚡⚡⚡⚡ |
-| **CSV Analysis** | <1 second | ⚡⚡⚡⚡⚡ |
-| **GPU Usage** | 4-6GB VRAM | Optimized |
-| **RAM Usage** | 6-7GB | Efficient |
-
-**Speeds tested on:** GTX 1650 + Ryzen 5000 + 8GB RAM
-
----
-
-## 💻 **System Requirements**
+## 💻 Hardware Requirements
 
 ### ✅ Minimum (Tested & Working)
-- **CPU:** AMD Ryzen 5000 Series (or equivalent)
+
+- **CPU:** AMD Ryzen 5000 Series or equivalent
 - **GPU:** NVIDIA GTX 1650 (4GB VRAM)
 - **RAM:** 8GB
-- **Storage:** 50GB+ (for models)
+- **Storage:** 50GB+ for models
 - **OS:** Windows 10/11
 
-### ⭐ Recommended (For Best Experience)
+### ⭐ Recommended
+
 - **CPU:** Ryzen 7 / i7 or better
 - **GPU:** RTX 3060+ (8GB+ VRAM)
 - **RAM:** 16GB+
@@ -250,19 +187,21 @@ JARVIS uses n8n to create intelligent automation chains.
 
 ---
 
-## 🚀 **Installation Guide**
+## 🚀 Installation Guide
 
-### **Step 1: Clone/Download Project**
-```bash
-cd C:\Users\sanja\OneDrive\sthithapragn\PROJECT J
-```
+### Step 1: Prerequisites
 
-### **Step 2: Install Ollama**
-- Download: https://ollama.ai
-- Run installer
-- Models auto-download when needed
+- Python 3.9+
+- Git installed
+- Docker Desktop
+- 50GB+ disk space
 
-### **Step 3: Setup Python Environment**
+### Step 2: Download Ollama
+
+https://ollama.ai
+
+### Step 3: Setup Python Environment
+
 ```bash
 cd jarvis
 python -m venv venv
@@ -270,7 +209,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### **Step 4: Start Services**
+### Step 4: Start Services
 
 **Terminal 1 - Flask API:**
 ```bash
@@ -278,248 +217,134 @@ cd python-tools
 python main.py
 ```
 
-**Terminal 2 - Docker Containers:**
+**Terminal 2 - Docker:**
 ```bash
 docker start open-webui n8n
 ```
 
-### **Step 5: Access JARVIS**
-🤖 Chat:      http://localhost:3000
-🔧 Workflows: http://localhost:5678
-📡 API:       http://localhost:5000/api/health
+### Step 5: Access Jarvis
 
+- **Chat:** http://localhost:3000
+- **Workflows:** http://localhost:5678
+- **API:** http://localhost:5000/api/health
 
 ---
 
-## 📚 **Usage Examples**
+## 📚 Usage Examples
 
-### **Example 1: Simple Chat**
-YOU:    "Explain quantum computing"
-JARVIS: "Quantum computers use quantum bits (qubits) that can be
-0 and 1 simultaneously... [continues with detailed explanation]"
-TIME:   5-10 seconds
+### Example 1: Simple Chat
+YOU: "Explain quantum computing"
+JARVIS: "Quantum computers use quantum bits (qubits)..."
 
-### **Example 2: Code Generation**
-YOU:    "Write Python code to check if a string is a palindrome"
+### Example 2: Code Help
+YOU: "Write Python code to check if a string is a palindrome"
 JARVIS: "
 def is_palindrome(s):
 s = s.lower().replace(' ', '')
 return s == s[::-1]
-Usage
-print(is_palindrome('A man a plan a canal Panama'))  # True
 "
-TIME:   3-7 seconds
 
-### **Example 3: Document Analysis**
-YOU:    "Upload research_paper.pdf and summarize it"
-JARVIS: [Extracts 50 pages] → [Analyzes] → [Creates summary]
-"Key findings: 1) ... 2) ... 3) ..."
-TIME:   10-20 seconds (depends on PDF size)
-
-### **Example 4: Job Matching**
-YOU:    "Does my resume match this Python developer job?"
-JARVIS: "Match Score: 85%
-✅ You have: Python, Flask, Docker
-⚠️  Missing: Django experience
-💡 Suggestion: Learn Django in 2 weeks"
-TIME:   2-5 seconds
+### Example 3: Document Analysis
+YOU: "Summarize this research paper"
+JARVIS: [Extracts PDF] → [Analyzes] → [Returns summary]
 
 ---
 
-## 🎓 **What You'll Learn**
+## 🎓 What You'll Learn
 
-Building and using JARVIS teaches you:
-
-- ✅ **AI/ML:** How LLMs work locally
-- ✅ **APIs:** REST API design with Flask
-- ✅ **DevOps:** Docker containerization
-- ✅ **Automation:** n8n workflow creation
-- ✅ **Python:** Advanced file handling & data processing
-- ✅ **System Design:** Full-stack architecture
-- ✅ **GPU Programming:** CUDA optimization
-- ✅ **VCS:** Git workflow management
-
-**This is a portfolio-quality project.** 🏆
+- ✅ AI/ML & Local LLM deployment
+- ✅ REST API design with Flask
+- ✅ Docker containerization
+- ✅ n8n workflow automation
+- ✅ Python advanced features
+- ✅ System architecture & design
+- ✅ GPU programming (CUDA)
+- ✅ Git & version control
 
 ---
 
-## 🔄 **Project Phases Completed**
-
-✅ Phase 1: Infrastructure Setup
-• Ollama installation & configuration
-• Docker environment setup
-• Open WebUI deployment
-• n8n workflow engine
-
-✅ Phase 2: Project Structure
-• Folder organization
-• Git repository setup
-• Configuration management
-
-✅ Phase 3: Ollama Mastery
-• 3 LLM models configured
-• GPU optimization
-• Model comparison & benchmarking
-
-✅ Phase 4: Automation Workflows
-• n8n fundamentals
-• Webhook integration
-• Workflow creation
-
-✅ Phase 5: Python Tools Development
-• 5 custom tools created
-• File processing
-• Data analysis capabilities
-
-✅ Phase 6: API Integration
-• Flask REST server
-• 6+ API endpoints
-• JSON request/response handling
-
-✅ Phase 7: Documentation & Polish
-• Comprehensive README
-• Architecture documentation
-• Quick-start guides
-• Portfolio preparation
+## 📁 Project Structure
+jarvis/
+├── python-tools/           # Python scripts & Flask API
+│   ├── main.py             # Flask server
+│   ├── file_reader.py      # Text file reading
+│   ├── pdf_extractor.py    # PDF extraction
+│   ├── csv_analyzer.py     # CSV analysis
+│   ├── file_lister.py      # Directory listing
+│   └── requirements.txt     # Dependencies
+├── workflows/              # n8n workflow backups
+├── config/                 # Configuration files
+├── data/                   # Sample data & uploads
+├── docs/                   # Documentation
+├── README.md               # This file
+├── LICENSE                 # MIT License
+├── .env                    # Environment variables
+└── .gitignore              # Git ignore rules
 
 ---
 
-## 🌟 **Why This Project Stands Out**
-
-### **For Interviews**
-- Shows full-stack capability
-- Demonstrates AI understanding
-- Proves DevOps knowledge
-- Shows project completion ability
-
-### **For Career**
-- Portfolio-worthy project
-- Solves real problems
-- Shows initiative & learning
-- Completely original work
-
-### **For Future**
-- Foundation for advanced ML projects
-- Local deployment alternative to cloud
-- Educational tool for learning AI
-- Customizable for your needs
-
----
-
-## 🔐 **Privacy & Security**
+## 🔐 Privacy & Security
 
 **Your data is YOURS.**
-ChatGPT:              Your Messages → OpenAI Servers → Their AI
-JARVIS:               Your Messages → Your GPU → Your Laptop (Stays Local)
+ChatGPT:    Your Messages → OpenAI Servers
+JARVIS:     Your Messages → Your GPU → Your Laptop (Stays Local)
 No telemetry
-No tracking cookies
+No tracking
 No data collection
-No internet connection required
-100% offline capability
-
-**This is privacy the way it should be.** 🛡️
+No internet needed
+100% offline capable
 
 ---
 
-## 🚀 **Next Steps**
+## 🚀 Next Steps
 
-### **Immediate:**
 1. ✅ Start using JARVIS daily
 2. ✅ Try different models
 3. ✅ Explore n8n workflows
-4. ✅ Push to GitHub
-
-### **Short-term (1-2 weeks):**
-1. Create demo video
-2. Write Medium article
-3. Share on Twitter/LinkedIn
-4. Get feedback from dev community
-
-### **Long-term (1-3 months):**
-1. Add fine-tuning capability
-2. Implement voice input/output
-3. Create web UI wrapper
-4. Build mobile companion app
-5. Open-source as full package
+4. ✅ Share on GitHub
+5. ✅ Build on top of it
 
 ---
 
-## 📖 **Documentation**
+## 🤝 Contributing
 
-| Document | Purpose |
-|----------|---------|
-| `README.md` | This file - Overview & getting started |
-| `QUICKSTART.md` | Step-by-step startup guide |
-| `ARCHITECTURE.md` | Deep technical architecture |
-| `API.md` | REST API endpoint documentation |
-| `MODELS.md` | LLM model comparison & selection |
+This is a personal portfolio project. Feel free to fork and build upon it!
 
 ---
 
-## 🤝 **Contributing**
-
-This is a personal portfolio project. To build upon it:
-
-1. **Fork the repo**
-2. **Create feature branch** (`git checkout -b feature/amazing-feature`)
-3. **Commit changes** (`git commit -m 'Add amazing feature'`)
-4. **Push to branch** (`git push origin feature/amazing-feature`)
-5. **Open Pull Request**
-
----
-
-## 📄 **License**
+## 📄 License
 
 MIT License - Free to use, modify, and distribute.
 
-See `LICENSE` file for details.
+---
+
+## 👨‍💻 About the Builder
+
+**Sanjana Reddy** - CS Student specializing in AI & ML
+
+- 🎓 Building AI systems from scratch
+- 💻 Full-stack developer
+- 🚀 Open source enthusiast
+- 🌍 Passionate about local AI
 
 ---
 
-## 👨‍💻 **About the Builder**
-
-**Sanjana Reddy** - First-year CS Student specializing in AI & ML
-
-- 🎓 B.Tech Computer Science (AI & ML focus)
-- 💻 Built Jarvis as a passion project
-- 🚀 Believes AI should be local, private, and free
-- 🌍 Open to opportunities in AI/ML
-
-**Connect:**
-- 🐙 GitHub: [github.com/sanjanareddy2607-a11y/jarvis](https://github.com/sanjanareddy2607-a11y)
-- 💼 LinkedIn: [www.linkedin.com/in/mummaka-sanjana-reddy-794089405](https://linkedin.com)
-- 📧 Email: sanjanareddy2607@gmail.com
-
----
-
-## ⭐ **Show Your Support**
+## ⭐ Show Your Support
 
 If JARVIS helped you:
 
-- ⭐ **Star this repository**
-- 🔁 **Share with others**
-- 💬 **Leave feedback**
-- 🐛 **Report bugs**
-- 💡 **Suggest features**
-
-**Every star motivates future development!** 🙌
-
----
-
-## 🔮 **The Vision**
-
-> *"Democratizing AI. Making it local. Making it yours. Making it free. Making it powerful. Making it yours to control."*
-
-JARVIS isn't just a project. It's a movement toward **personal AI ownership** in a world of cloud dependency.
-
-**You are part of that movement.** 🚀
+- ⭐ Star this repository
+- 🔁 Share with others
+- 💬 Leave feedback
+- 🐛 Report bugs
+- 💡 Suggest features
 
 ---
 
 <div align="center">
 
-### **Built with ❤️ • Powered by Ollama • Automated by n8n • Created by SanjanaReddy**
+### **Built with ❤️ • Powered by Ollama • Automated by n8n**
 
-**[⬆ Back to Top](#-jarvis--personal-ai-operating-system)**
+### **Your Personal AI Operating System**
 
 </div>
