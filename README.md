@@ -4,13 +4,12 @@
 
 ### *A Fully Local, Private, Open-Source AI Assistant*
 
-![Python](https://img.shields.io/badge/Python-3.11%2B-3776ab?style=for-the-badge&logo=python&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-Local%20LLM-green?style=for-the-badge&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-Containerized-2496ed?style=for-the-badge&logo=docker&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-REST%20API-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.11+-3776ab?style=for-the-badge&logo=python&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-LocalLLM-34A853?style=for-the-badge&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-REST_API-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![n8n](https://img.shields.io/badge/n8n-Automation-FF6B6B?style=for-the-badge&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-
 **[🚀 Quick Start](#-quick-start) • [📖 Docs](#-documentation) • [🎯 Features](#-features) • [🔧 Tech Stack](#-tech-stack-with-logos)**
 
 </div>
@@ -197,7 +196,7 @@ JARVIS uses n8n to create intelligent automation chains.
 ```
 
 
-## Tech Stack (With Logos)
+## Tech Stack 
 
 ### AI & Inference
 - **Ollama** - Local LLM Runtime
@@ -486,7 +485,7 @@ See `LICENSE` file for details.
 - 🌍 Open to opportunities in AI/ML
 
 **Connect:**
-- 🐙 GitHub: [github.com/sanjanareddy2607-a11y/jarvis](https://github.com/sanjanareddy2607-a11y)
+- 🐙 GitHub: [github.com/sanjanareddy2607-a11y](https://github.com/sanjanareddy2607-a11y)
 - 💼 LinkedIn: [www.linkedin.com/in/mummaka-sanjana-reddy-794089405](https://linkedin.com)
 - 📧 Email: sanjanareddy2607@gmail.com
 
